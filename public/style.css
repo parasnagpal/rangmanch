@@ -1,0 +1,46 @@
+html,body,.container{
+    height:100%;
+}
+
+body{
+    background-color: #fde8c5;
+    
+}
+img{
+    width: inherit;
+}
+.row{
+    height:80%;
+}
+
+.row>.form{
+      background-color: white;
+      box-shadow: 2px 2px 5px gray ;
+      padding: 1em;
+      margin-top: 2em;
+      height: 100%;
+}
+
+.row .details{
+  padding: 1em;
+  font-family: 'Great Vibes';
+  font-weight: bold;
+}
+
+form{
+    height: 90%;
+}
+
+form button{
+    width: 100%;
+}
+
+#terms{
+    font-size: 0.9em;
+    color: gray;
+}
+
+input:focus,select:focus{
+    border: 1px black solid !important;
+    box-shadow: none !important;
+}

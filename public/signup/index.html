@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../style.css'>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src="./script.js"></script>
+    
+    <title>RangManch</title>
+</head>
+<body>
+    
+    <div class="container">
+      
+      <div class='row justify-content-center justify-content-md-end'>
+          <div class="col-12 col-md-5 details justify-content-center d-flex flex-column">
+              
+                <h1>RangManch</h1>
+                <img src='../back.svg.svg'>
+               
+          </div>
+        
+          <div class="col-10 col-md-6 form">
+                <h4>Register</h4>
+                <form class="d-flex flex-column justify-content-between" method="POST" action="/signup">
+                        <div class="form-row ">
+                          <div class="form-group col-md-6">
+                            <label for="fname">First Name</label>
+                            <input type="text" name='fname' class="form-control" id="fname" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" class="form-control" id="lname" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email Address</label>
+                          <input type="email" name="email" class="form-control" id="email" required placeholder="abc@xyz">
+                        </div>
+                        <div class='form-group'>
+                            <label for=''>I am</label>
+                            <select class="form-control" name="type">
+                                <option>Artist</option>
+                                <option>Follower</option>
+                            </select>
+                        </div>
+                        <div>
+                          
+                           <div class="form-group">
+                             <div class="form-check">
+                               <input class="form-check-input" type="checkbox" id="gridCheck">
+                               <label class="form-check-label" for="gridCheck" id='terms'>
+                                 I agree that the details mentioned above are true to the best of my knowledge
+                               </label>
+                             </div> 
+                           </div>
+
+                           <button type="submit" class="btn btn-outline-dark" id='signup'>Sign Up</button>
+
+                        </div>   
+                        <div>Existing User? <a href='./login' style="color: black">Log In</a></div>
+                      </form>
+
+          </div>
+          
+      </div>
+
+    </div>
+</body>
+</html>
