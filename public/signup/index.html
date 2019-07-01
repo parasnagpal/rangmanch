@@ -25,13 +25,14 @@
           <div class="col-12 col-md-5 details justify-content-center d-flex flex-column">
               
                 <h1>RangManch</h1>
-                <img src='../back.svg.svg'>
-               
+                <div id='frame'>
+                  <img src='../back.svg.svg'>
+                </div>
           </div>
         
           <div class="col-10 col-md-6 form">
                 <h4>Register</h4>
-                <form class="d-flex flex-column justify-content-between" method="POST" action="/signup">
+                <form class="d-flex flex-column justify-content-between" method="POST" action="http://localhost:3500/signup">
                         <div class="form-row ">
                           <div class="form-group col-md-6">
                             <label for="fname">First Name</label>
@@ -46,6 +47,12 @@
                           <label for="email">Email Address</label>
                           <input type="email" name="email" class="form-control" id="email" required placeholder="abc@xyz">
                         </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" required>
+                        </div>
+                        
                         <div class='form-group'>
                             <label for=''>I am</label>
                             <select class="form-control" name="type">
@@ -67,7 +74,7 @@
                            <button type="submit" class="btn btn-outline-dark" id='signup'>Sign Up</button>
 
                         </div>   
-                        <div>Existing User? <a href='./login' style="color: black">Log In</a></div>
+                        <div>Existing User? <a href='../login' style="color: black">Log In</a></div>
                       </form>
 
           </div>

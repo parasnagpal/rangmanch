@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../style.css'>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src="./script.js"></script>
+    
+    <title>RangManch</title>
+</head>
+<body>
+    
+    <div class="container" style="height: unset;">
+      
+      <div class='row justify-content-center justify-content-md-end'>
+          <div class="col-12 col-md-5 details justify-content-center d-flex flex-column">
+              
+                <h1>RangManch</h1>
+                <div id='frame'>
+                  <img src='../back.svg.svg'>
+                </div>
+          </div>
+        
+          <div class="col-10 col-md-6 form form1">
+                <h4>Sign In</h4>
+                <form class="d-flex flex-column justify-content-center" method="POST" action="/login">
+                        
+                        <div class="form-group">
+                          <label for="email">Email Address</label>
+                          <input type="email" name="email" class="form-control" id="email" required placeholder="abc@xyz">
+                        </div> 
+
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-outline-dark align-self-end mt-4" id='login'>Log In</button>
+                        </div>
+                          
+                        <div>New User? <a href='../signup' style="color: black">Sign Up</a></div>
+                      </form>
+
+          </div>
+          
+      </div>
+
+    </div>
+</body>
+</html>
