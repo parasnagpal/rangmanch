@@ -17,6 +17,7 @@ img{
     width: inherit;
     position: relative;
     left: -20%;
+    bottom: -10%;
 }
 .row{
     height:80%;
@@ -55,4 +56,6 @@ input:focus,select:focus{
 }
 #frame{
     width: inherit;
+    overflow: hidden;
+    padding-left: 12%;
 }

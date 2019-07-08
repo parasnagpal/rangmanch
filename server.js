@@ -5,7 +5,7 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended:true
 }))
-
+app.use('/',express.static(__dirname+'/public'))
 //post request
 {
     app.post('/login',(req,res)=>{
@@ -33,7 +33,7 @@ app.get('/signup',(req,res)=>{
 })
 
 
-app.use(express.static(__dirname+'/public'))
+
 app.listen(3500,()=>{
     console.log("Listening at 3500")
 })
